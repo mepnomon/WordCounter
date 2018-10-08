@@ -3,6 +3,10 @@ package wordcounter;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Simple Application to count occurrence of words.
+ * @author DDressler
+ */
 public class WordCounter implements WordCountService {
 
     @Override
@@ -11,7 +15,6 @@ public class WordCounter implements WordCountService {
     }
 
     private String[] extractWords(String text){
-        //String[] splitString = text.split("([\\W\\ ^0-9]+)");
         String[] splitString = text.split("([\\W\\ ^0-9]+)");
         return splitString;
     }

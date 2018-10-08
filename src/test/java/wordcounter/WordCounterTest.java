@@ -3,11 +3,14 @@ package wordcounter;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import wordcounter.WordCounter;
 
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Tester for Word Counter Application
+ * @author D. Dressler
+ */
 class WordCounterTest {
 
     WordCounter wordCounter;

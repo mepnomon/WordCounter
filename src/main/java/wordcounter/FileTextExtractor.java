@@ -7,6 +7,9 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Simple application to extract text from a file.
+ */
 public class FileTextExtractor {
 
     public String extractTextFromFile() {
