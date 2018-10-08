@@ -15,8 +15,7 @@ public class WordCounter implements WordCountService {
     }
 
     private String[] extractWords(String text){
-        String[] splitString = text.split("([\\W\\ ^0-9]+)");
-        return splitString;
+        return text.split("([\\W\\ ^0-9]+)");
     }
 
     private Map<String, Integer> countOccurrence(String[] words){
