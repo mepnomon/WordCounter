@@ -4,7 +4,7 @@ import java.util.Map;
 
 /**
  * Main method.
- * Prints word and count
+ * Prints word + count.
  * @author D. Dressler
  */
 public class Main {

@@ -9,6 +9,7 @@ import java.util.List;
 
 /**
  * Simple application to extract text from a file.
+ * @autor D. Dressler
  */
 public class FileTextExtractor {
 
