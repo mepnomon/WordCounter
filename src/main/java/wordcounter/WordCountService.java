@@ -1,3 +1,5 @@
+package wordcounter;
+
 import java.util.Map;
 
 public interface WordCountService {

@@ -1,5 +1,9 @@
+package wordcounter;
+
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import wordcounter.WordCounter;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -9,7 +13,7 @@ class WordCounterTest {
     WordCounter wordCounter;
     Map<String, Integer> words;
 
-    @org.junit.jupiter.api.BeforeEach
+    @BeforeEach
     void setUp() {
         wordCounter = new WordCounter();
         words = new HashMap<>();
@@ -76,6 +80,12 @@ class WordCounterTest {
     @Test
     public void test_with_hyphenated_word(){
         String text = "This is a-test";
+        Assertions.assertEquals(words,wordCounter.countWords(text));
+    }
+
+    @Test
+    public void test_with_question_mark(){
+        String text = "This is a test?";
         Assertions.assertEquals(words,wordCounter.countWords(text));
     }
 }
