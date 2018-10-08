@@ -5,7 +5,7 @@ import java.util.Map;
 
 /**
  * Simple Application to count occurrence of words.
- * @author DDressler
+ * @author D. Dressler
  */
 public class WordCounter implements WordCountService {
 
