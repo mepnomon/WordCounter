@@ -1,0 +1,4 @@
+wordcounter\WordCountService.class
+wordcounter\FileTextExtractor.class
+wordcounter\WordCounter.class
+wordcounter\Main.class

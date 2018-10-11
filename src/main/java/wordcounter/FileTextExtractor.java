@@ -23,6 +23,7 @@ public class FileTextExtractor {
                 lines.add(line);
                 line = reader.readLine();
             }
+            inputStream.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
