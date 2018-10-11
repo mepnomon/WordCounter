@@ -26,11 +26,16 @@ public class FileTextExtractor {
                 line = reader.readLine();
             }
 
-            inputStream.close();
-            reader.close();
-
         } catch (IOException e) {
             e.printStackTrace();
+        } finally {
+
+            try {
+                inputStream.close();
+                reader.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
         return convertLinesToString(lines);
     }
