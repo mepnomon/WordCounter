@@ -24,6 +24,7 @@ public class FileTextExtractor {
                 line = reader.readLine();
             }
             inputStream.close();
+            reader.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
