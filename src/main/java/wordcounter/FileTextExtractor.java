@@ -17,14 +17,18 @@ public class FileTextExtractor {
         InputStream inputStream = this.getClass().getClassLoader().getResourceAsStream("war_of_the_worlds.txt");
         BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
         List<String> lines = new ArrayList<>();
+
         try {
             String line = reader.readLine();
+
             while(line != null){
                 lines.add(line);
                 line = reader.readLine();
             }
+
             inputStream.close();
             reader.close();
+
         } catch (IOException e) {
             e.printStackTrace();
         }
